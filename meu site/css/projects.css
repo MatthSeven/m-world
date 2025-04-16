@@ -1,0 +1,186 @@
+body {
+    color: white;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    background: linear-gradient(45deg, darkslateblue 25%, black 50%, rgba(34, 3, 85, 0.842) 75%);
+    background-size: 400% 400%;
+    animation: waveAnimation 10s ease infinite;
+}
+
+@keyframes waveAnimation {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid rgb(38, 2, 85);
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    color: darkslateblue;
+    text-align: center;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    clear: both;
+    /* Garante que o footer fique abaixo do iframe */
+}
+
+footer a {
+    margin: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 2px;
+}
+
+footer a:hover {
+    color: whitesmoke;
+}
+
+.container {
+    padding: 0px 50px;
+}
+
+
+/* Nova animação para rolagem apenas na parte superior */
+
+.top-section {
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    /* Aumentando a duração para 0.6s */
+}
+
+.top-section.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+nav a:hover {
+    color: whitesmoke;
+}
+
+button {
+    margin-top: 20px;
+    /* Espaço acima */
+    margin-bottom: 20px;
+    /* Espaço abaixo */
+    display: block;
+    /* Faz o botão ficar sozinho na linha */
+    padding: 10px 20px;
+    /* Espaço interno (tamanho do botão) */
+    background-color: darkslateblue;
+    /* Cor de fundo */
+    color: white;
+    /* Cor do texto */
+    border: none;
+    /* Remove borda padrão */
+    border-radius: 8px;
+    /* Cantos arredondados */
+    cursor: pointer;
+    /* Cursor de clique */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primario {
+    background-color: darkslateblue;
+    border: 4px;
+    border-radius: 18px;
+    padding: 5px;
+}
+
+.btn-segundario {
+    background-color: darkslateblue;
+    border: 4px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+main p a {
+    color: white;
+    text-decoration: none;
+}
+
+main p a:hover {
+    color: lightskyblue;
+    text-decoration: underline;
+}
+
+.mapa-iframe {
+    width: 70%;
+    height: 350px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    float: left;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    img {
+        width: 120px;
+        height: 120px;
+    }
+    .container {
+        padding: 0px 20px;
+    }
+    .mapa-iframe {
+        width: 100%;
+        height: 300px;
+        float: none;
+        margin: auto;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    button {
+        width: 100%;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer a {
+        margin: 10px 0;
+    }
+}

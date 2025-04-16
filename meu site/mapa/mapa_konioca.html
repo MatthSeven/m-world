@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1a569b58e7f577d2e55ad1e4993ef0a0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1a569b58e7f577d2e55ad1e4993ef0a0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1a569b58e7f577d2e55ad1e4993ef0a0 = L.map(
+                "map_1a569b58e7f577d2e55ad1e4993ef0a0",
+                {
+                    center: [-15.793889, -47.882778],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dd07fa0584fe7f50fbcdaa91f761aa2c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_dd07fa0584fe7f50fbcdaa91f761aa2c.addTo(map_1a569b58e7f577d2e55ad1e4993ef0a0);
+        
+    
+            var feature_group_3f72b36207f339d932e9e9b842978f27 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_e5dfe08754bd3d58a20aca8eb6f50daf = L.marker(
+                [-12.704163, -60.122966],
+                {
+}
+            ).addTo(feature_group_3f72b36207f339d932e9e9b842978f27);
+        
+    
+            var icon_b344276d1de608d7cde35f5b842b23ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_673215bfd06c3ce768e43aefaad1fa63 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0ba3759e81dbb4b4e69eef27133ceddb = $(`<div id="html_0ba3759e81dbb4b4e69eef27133ceddb" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-12.704163,-60.122966" target="_blank">Konioca Vilhenas</a></div>`)[0];
+                popup_673215bfd06c3ce768e43aefaad1fa63.setContent(html_0ba3759e81dbb4b4e69eef27133ceddb);
+            
+        
+
+        marker_e5dfe08754bd3d58a20aca8eb6f50daf.bindPopup(popup_673215bfd06c3ce768e43aefaad1fa63)
+        ;
+
+        
+    
+    
+                marker_e5dfe08754bd3d58a20aca8eb6f50daf.setIcon(icon_b344276d1de608d7cde35f5b842b23ef);
+            
+    
+            var marker_538974600e3d57146da6a5ad2b5b26c8 = L.marker(
+                [-1.44518, -48.489048],
+                {
+}
+            ).addTo(feature_group_3f72b36207f339d932e9e9b842978f27);
+        
+    
+            var icon_b9ff7440304a401b84e4be3632420484 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fbd47c46f53262241b6384aa7b1871b5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d4f3983d0a6cdb5771ed3fec4f797031 = $(`<div id="html_d4f3983d0a6cdb5771ed3fec4f797031" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-1.44518,-48.489048" target="_blank">Konioca Belém</a></div>`)[0];
+                popup_fbd47c46f53262241b6384aa7b1871b5.setContent(html_d4f3983d0a6cdb5771ed3fec4f797031);
+            
+        
+
+        marker_538974600e3d57146da6a5ad2b5b26c8.bindPopup(popup_fbd47c46f53262241b6384aa7b1871b5)
+        ;
+
+        
+    
+    
+                marker_538974600e3d57146da6a5ad2b5b26c8.setIcon(icon_b9ff7440304a401b84e4be3632420484);
+            
+    
+            feature_group_3f72b36207f339d932e9e9b842978f27.addTo(map_1a569b58e7f577d2e55ad1e4993ef0a0);
+        
+    
+            var feature_group_55d4b6723f2f8529fab8090bcd92bda9 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_33a4328221bb41b46ac08a9f63110b13 = L.marker(
+                [-13.005452, -38.523945],
+                {
+}
+            ).addTo(feature_group_55d4b6723f2f8529fab8090bcd92bda9);
+        
+    
+            var icon_7727e96675169ad21ddad45934d1093a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae1a11ae94927d171f0fe520f20a32f9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fe564a7ce4d892f555f21db6ee81dc35 = $(`<div id="html_fe564a7ce4d892f555f21db6ee81dc35" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-13.005452,-38.523945" target="_blank">Konioca Barreiras - Ba</a></div>`)[0];
+                popup_ae1a11ae94927d171f0fe520f20a32f9.setContent(html_fe564a7ce4d892f555f21db6ee81dc35);
+            
+        
+
+        marker_33a4328221bb41b46ac08a9f63110b13.bindPopup(popup_ae1a11ae94927d171f0fe520f20a32f9)
+        ;
+
+        
+    
+    
+                marker_33a4328221bb41b46ac08a9f63110b13.setIcon(icon_7727e96675169ad21ddad45934d1093a);
+            
+    
+            var marker_0df59d27e8162f1a035c900db6b59d77 = L.marker(
+                [-8.036914, -34.871729],
+                {
+}
+            ).addTo(feature_group_55d4b6723f2f8529fab8090bcd92bda9);
+        
+    
+            var icon_438f2ab33ee1b82c815e59b3556a94c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d25c87162d5dc35a14a793d8edbd383 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_baf4997fca4c9c09b876e831d6cee317 = $(`<div id="html_baf4997fca4c9c09b876e831d6cee317" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-8.036914,-34.871729" target="_blank">Konioca Recife</a></div>`)[0];
+                popup_6d25c87162d5dc35a14a793d8edbd383.setContent(html_baf4997fca4c9c09b876e831d6cee317);
+            
+        
+
+        marker_0df59d27e8162f1a035c900db6b59d77.bindPopup(popup_6d25c87162d5dc35a14a793d8edbd383)
+        ;
+
+        
+    
+    
+                marker_0df59d27e8162f1a035c900db6b59d77.setIcon(icon_438f2ab33ee1b82c815e59b3556a94c7);
+            
+    
+            var marker_e7a741a96921b4fee332d57140964fbc = L.marker(
+                [-3.738546, -38.471006],
+                {
+}
+            ).addTo(feature_group_55d4b6723f2f8529fab8090bcd92bda9);
+        
+    
+            var icon_5f841bf73fc0745ed2426d9f52f827d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6fc75995d53de28eac57f41ebe6244ff = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_74ad06052c9334d4506cc106a59d9b08 = $(`<div id="html_74ad06052c9334d4506cc106a59d9b08" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-3.738546,-38.471006" target="_blank">Konioca Fortaleza - Nova Localição em breve</a></div>`)[0];
+                popup_6fc75995d53de28eac57f41ebe6244ff.setContent(html_74ad06052c9334d4506cc106a59d9b08);
+            
+        
+
+        marker_e7a741a96921b4fee332d57140964fbc.bindPopup(popup_6fc75995d53de28eac57f41ebe6244ff)
+        ;
+
+        
+    
+    
+                marker_e7a741a96921b4fee332d57140964fbc.setIcon(icon_5f841bf73fc0745ed2426d9f52f827d0);
+            
+    
+            var marker_2543c4354d649e9ac49046cfe605ae6d = L.marker(
+                [-13.00553, -38.523936],
+                {
+}
+            ).addTo(feature_group_55d4b6723f2f8529fab8090bcd92bda9);
+        
+    
+            var icon_83c8aebcf9ef906930652bb3d8371060 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c45b4aa4eba2fe34870559bfc662982 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9636ae883d25aa569bce9914c5bb233f = $(`<div id="html_9636ae883d25aa569bce9914c5bb233f" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-13.00553,-38.523936" target="_blank">Konioca Shopping Barra - BA</a></div>`)[0];
+                popup_1c45b4aa4eba2fe34870559bfc662982.setContent(html_9636ae883d25aa569bce9914c5bb233f);
+            
+        
+
+        marker_2543c4354d649e9ac49046cfe605ae6d.bindPopup(popup_1c45b4aa4eba2fe34870559bfc662982)
+        ;
+
+        
+    
+    
+                marker_2543c4354d649e9ac49046cfe605ae6d.setIcon(icon_83c8aebcf9ef906930652bb3d8371060);
+            
+    
+            var marker_e0139d069070bd2170ba5841d1c4c6c0 = L.marker(
+                [-7.234036, -35.868686],
+                {
+}
+            ).addTo(feature_group_55d4b6723f2f8529fab8090bcd92bda9);
+        
+    
+            var icon_a11b4c83457775d7cbb1fa187259eef5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e6907ee2f91397a579d589af643cfd49 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ba30d420309616bdb6a2f2f085015165 = $(`<div id="html_ba30d420309616bdb6a2f2f085015165" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-7.234036,-35.868686" target="_blank">Konioca Campina Grande</a></div>`)[0];
+                popup_e6907ee2f91397a579d589af643cfd49.setContent(html_ba30d420309616bdb6a2f2f085015165);
+            
+        
+
+        marker_e0139d069070bd2170ba5841d1c4c6c0.bindPopup(popup_e6907ee2f91397a579d589af643cfd49)
+        ;
+
+        
+    
+    
+                marker_e0139d069070bd2170ba5841d1c4c6c0.setIcon(icon_a11b4c83457775d7cbb1fa187259eef5);
+            
+    
+            var marker_5f153d036c495a6a887ee651f52eb054 = L.marker(
+                [-5.865191, -35.185635],
+                {
+}
+            ).addTo(feature_group_55d4b6723f2f8529fab8090bcd92bda9);
+        
+    
+            var icon_221b0d0d2328d75a316e4d0a2d9c6ad8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9520d9b1db576c209f9868d802adf92c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ae3dd147e1c185fa2124b959bed61123 = $(`<div id="html_ae3dd147e1c185fa2124b959bed61123" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-5.865191,-35.185635" target="_blank">Konioca Natal</a></div>`)[0];
+                popup_9520d9b1db576c209f9868d802adf92c.setContent(html_ae3dd147e1c185fa2124b959bed61123);
+            
+        
+
+        marker_5f153d036c495a6a887ee651f52eb054.bindPopup(popup_9520d9b1db576c209f9868d802adf92c)
+        ;
+
+        
+    
+    
+                marker_5f153d036c495a6a887ee651f52eb054.setIcon(icon_221b0d0d2328d75a316e4d0a2d9c6ad8);
+            
+    
+            var marker_24d9ffbe88330ec127facd083c605af5 = L.marker(
+                [-4.954485, -47.490294],
+                {
+}
+            ).addTo(feature_group_55d4b6723f2f8529fab8090bcd92bda9);
+        
+    
+            var icon_96b49463fca68bb1b67e73eda1873776 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_96d9e579ac704db152a76e17858886d4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b3f2ec0bf7368c345fac4d497b3f4a85 = $(`<div id="html_b3f2ec0bf7368c345fac4d497b3f4a85" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-4.954485,-47.490294" target="_blank">Konioca Açailândia</a></div>`)[0];
+                popup_96d9e579ac704db152a76e17858886d4.setContent(html_b3f2ec0bf7368c345fac4d497b3f4a85);
+            
+        
+
+        marker_24d9ffbe88330ec127facd083c605af5.bindPopup(popup_96d9e579ac704db152a76e17858886d4)
+        ;
+
+        
+    
+    
+                marker_24d9ffbe88330ec127facd083c605af5.setIcon(icon_96b49463fca68bb1b67e73eda1873776);
+            
+    
+            feature_group_55d4b6723f2f8529fab8090bcd92bda9.addTo(map_1a569b58e7f577d2e55ad1e4993ef0a0);
+        
+    
+            var feature_group_d09e99174b68aedb8d3b691bb242523f = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_bda8a36b84e5615003085e84e0e16c09 = L.marker(
+                [-16.629259, -49.278718],
+                {
+}
+            ).addTo(feature_group_d09e99174b68aedb8d3b691bb242523f);
+        
+    
+            var icon_4ddb671d4580d2a41a3bc708c57baa3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e10c8204cb2f1ad89dd78f25cba5bc30 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0d7e5739247218c0e9f9a07e4338ca16 = $(`<div id="html_0d7e5739247218c0e9f9a07e4338ca16" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-16.629259,-49.278718" target="_blank">Konioca Passeios das Águas</a></div>`)[0];
+                popup_e10c8204cb2f1ad89dd78f25cba5bc30.setContent(html_0d7e5739247218c0e9f9a07e4338ca16);
+            
+        
+
+        marker_bda8a36b84e5615003085e84e0e16c09.bindPopup(popup_e10c8204cb2f1ad89dd78f25cba5bc30)
+        ;
+
+        
+    
+    
+                marker_bda8a36b84e5615003085e84e0e16c09.setIcon(icon_4ddb671d4580d2a41a3bc708c57baa3b);
+            
+    
+            var marker_266dba36a7b7c41c5181afd67e39383a = L.marker(
+                [-15.574679, -56.072313],
+                {
+}
+            ).addTo(feature_group_d09e99174b68aedb8d3b691bb242523f);
+        
+    
+            var icon_93cc59375fa3bf4647df0435578ecdaa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab2ad24838d4c10d7d270be0472311fb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a2dacffeab9620889c6e8a470e7d7010 = $(`<div id="html_a2dacffeab9620889c6e8a470e7d7010" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-15.574679,-56.072313" target="_blank">Konioca Cuiabá</a></div>`)[0];
+                popup_ab2ad24838d4c10d7d270be0472311fb.setContent(html_a2dacffeab9620889c6e8a470e7d7010);
+            
+        
+
+        marker_266dba36a7b7c41c5181afd67e39383a.bindPopup(popup_ab2ad24838d4c10d7d270be0472311fb)
+        ;
+
+        
+    
+    
+                marker_266dba36a7b7c41c5181afd67e39383a.setIcon(icon_93cc59375fa3bf4647df0435578ecdaa);
+            
+    
+            var marker_919ac832faaecc72f6645b772d9ac062 = L.marker(
+                [-15.652291, -56.122985],
+                {
+}
+            ).addTo(feature_group_d09e99174b68aedb8d3b691bb242523f);
+        
+    
+            var icon_34f2a1b1a62c5cb08f486fd203179014 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ed62e6e16c7cac8be85cba1d8d428e32 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e8156f1bfdef78575fdbedc8e0a2822d = $(`<div id="html_e8156f1bfdef78575fdbedc8e0a2822d" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-15.652291,-56.122985" target="_blank">Konioca Varzea Grande</a></div>`)[0];
+                popup_ed62e6e16c7cac8be85cba1d8d428e32.setContent(html_e8156f1bfdef78575fdbedc8e0a2822d);
+            
+        
+
+        marker_919ac832faaecc72f6645b772d9ac062.bindPopup(popup_ed62e6e16c7cac8be85cba1d8d428e32)
+        ;
+
+        
+    
+    
+                marker_919ac832faaecc72f6645b772d9ac062.setIcon(icon_34f2a1b1a62c5cb08f486fd203179014);
+            
+    
+            var marker_fd20a9291fea72cabe799abb7c0fb891 = L.marker(
+                [-20.457441, -54.586297],
+                {
+}
+            ).addTo(feature_group_d09e99174b68aedb8d3b691bb242523f);
+        
+    
+            var icon_9c8b6a1d021431df0ed7a45aeafd25de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a3b6d548c4b4919fb2b7fdf554b43c1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8f5d182bbcdfb27335c6a615f2d0ad11 = $(`<div id="html_8f5d182bbcdfb27335c6a615f2d0ad11" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-20.457441,-54.586297" target="_blank">Konioca Campo Grande</a></div>`)[0];
+                popup_6a3b6d548c4b4919fb2b7fdf554b43c1.setContent(html_8f5d182bbcdfb27335c6a615f2d0ad11);
+            
+        
+
+        marker_fd20a9291fea72cabe799abb7c0fb891.bindPopup(popup_6a3b6d548c4b4919fb2b7fdf554b43c1)
+        ;
+
+        
+    
+    
+                marker_fd20a9291fea72cabe799abb7c0fb891.setIcon(icon_9c8b6a1d021431df0ed7a45aeafd25de);
+            
+    
+            feature_group_d09e99174b68aedb8d3b691bb242523f.addTo(map_1a569b58e7f577d2e55ad1e4993ef0a0);
+        
+    
+            var feature_group_d81219802e10e7f6813604d7e3bf202b = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_43651a2d6b64c5d45daadd29527ea31e = L.marker(
+                [-23.484763, -46.854517],
+                {
+}
+            ).addTo(feature_group_d81219802e10e7f6813604d7e3bf202b);
+        
+    
+            var icon_cc601a8ba3c6bc60d9a3e6bf784e9a75 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9110642b09b791ee89ee701a6b06fd39 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3d712406e7e0959d3489a778abe9eb6f = $(`<div id="html_3d712406e7e0959d3489a778abe9eb6f" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-23.484763,-46.854517" target="_blank">Konioca Alphaville - Matriz</a></div>`)[0];
+                popup_9110642b09b791ee89ee701a6b06fd39.setContent(html_3d712406e7e0959d3489a778abe9eb6f);
+            
+        
+
+        marker_43651a2d6b64c5d45daadd29527ea31e.bindPopup(popup_9110642b09b791ee89ee701a6b06fd39)
+        ;
+
+        
+    
+    
+                marker_43651a2d6b64c5d45daadd29527ea31e.setIcon(icon_cc601a8ba3c6bc60d9a3e6bf784e9a75);
+            
+    
+            var marker_416f70cad2870b467cddf0420ba2094d = L.marker(
+                [-23.607199, -46.693345],
+                {
+}
+            ).addTo(feature_group_d81219802e10e7f6813604d7e3bf202b);
+        
+    
+            var icon_d7f3c2bdcc715602f30c7a6653728a3c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0e7b6a2e8a0d90f481b6bee6b7282092 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_17890da1ae37d087c32484d31d8ab12a = $(`<div id="html_17890da1ae37d087c32484d31d8ab12a" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-23.607199,-46.693345" target="_blank">Konioca Berrini</a></div>`)[0];
+                popup_0e7b6a2e8a0d90f481b6bee6b7282092.setContent(html_17890da1ae37d087c32484d31d8ab12a);
+            
+        
+
+        marker_416f70cad2870b467cddf0420ba2094d.bindPopup(popup_0e7b6a2e8a0d90f481b6bee6b7282092)
+        ;
+
+        
+    
+    
+                marker_416f70cad2870b467cddf0420ba2094d.setIcon(icon_d7f3c2bdcc715602f30c7a6653728a3c);
+            
+    
+            var marker_34e93bfb46428f9b1d09ed31ce92db9d = L.marker(
+                [-23.55052, -46.633308],
+                {
+}
+            ).addTo(feature_group_d81219802e10e7f6813604d7e3bf202b);
+        
+    
+            var icon_da85e0c71e64471d0dde563ff458f996 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4aa2c749a979e15270a8836976d2cdd8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_64912343c74c006cd93ffd1ab320d22d = $(`<div id="html_64912343c74c006cd93ffd1ab320d22d" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-23.55052,-46.633308" target="_blank">Konioca São Paulo</a></div>`)[0];
+                popup_4aa2c749a979e15270a8836976d2cdd8.setContent(html_64912343c74c006cd93ffd1ab320d22d);
+            
+        
+
+        marker_34e93bfb46428f9b1d09ed31ce92db9d.bindPopup(popup_4aa2c749a979e15270a8836976d2cdd8)
+        ;
+
+        
+    
+    
+                marker_34e93bfb46428f9b1d09ed31ce92db9d.setIcon(icon_da85e0c71e64471d0dde563ff458f996);
+            
+    
+            var marker_119f9656f8941bf2b3f65d08c6a3440e = L.marker(
+                [-23.200021, -46.693345],
+                {
+}
+            ).addTo(feature_group_d81219802e10e7f6813604d7e3bf202b);
+        
+    
+            var icon_476eca30234385457b44c8dc18f23941 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09abb6884a74383746bdc436e01f35bf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_08f85bbcf065b267ce718a7698df0966 = $(`<div id="html_08f85bbcf065b267ce718a7698df0966" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-23.200021,-46.693345" target="_blank">Konioca São José dos Campos</a></div>`)[0];
+                popup_09abb6884a74383746bdc436e01f35bf.setContent(html_08f85bbcf065b267ce718a7698df0966);
+            
+        
+
+        marker_119f9656f8941bf2b3f65d08c6a3440e.bindPopup(popup_09abb6884a74383746bdc436e01f35bf)
+        ;
+
+        
+    
+    
+                marker_119f9656f8941bf2b3f65d08c6a3440e.setIcon(icon_476eca30234385457b44c8dc18f23941);
+            
+    
+            var marker_3a0581fbaddbeca5290fe02a0e15b3f4 = L.marker(
+                [-22.758489, -43.449647],
+                {
+}
+            ).addTo(feature_group_d81219802e10e7f6813604d7e3bf202b);
+        
+    
+            var icon_61af47463257d12010e6c9ca63a49931 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3bb07aba36b6b4aa4560044e90fb6782 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_520e4f4832031826949ea731b05ca966 = $(`<div id="html_520e4f4832031826949ea731b05ca966" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-22.758489,-43.449647" target="_blank">Konioca Nova Iguaçu</a></div>`)[0];
+                popup_3bb07aba36b6b4aa4560044e90fb6782.setContent(html_520e4f4832031826949ea731b05ca966);
+            
+        
+
+        marker_3a0581fbaddbeca5290fe02a0e15b3f4.bindPopup(popup_3bb07aba36b6b4aa4560044e90fb6782)
+        ;
+
+        
+    
+    
+                marker_3a0581fbaddbeca5290fe02a0e15b3f4.setIcon(icon_61af47463257d12010e6c9ca63a49931);
+            
+    
+            var marker_5d5762676acb88dfdeb02a28f5756513 = L.marker(
+                [-20.126946, -44.882083],
+                {
+}
+            ).addTo(feature_group_d81219802e10e7f6813604d7e3bf202b);
+        
+    
+            var icon_86a45951bda6c4b40da5079fba8a1697 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a73e177f553ec5b82ff0f3607418f994 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_33ea82aee38a88f317f19e4b489391cf = $(`<div id="html_33ea82aee38a88f317f19e4b489391cf" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-20.126946,-44.882083" target="_blank">Konioca Divinopolis</a></div>`)[0];
+                popup_a73e177f553ec5b82ff0f3607418f994.setContent(html_33ea82aee38a88f317f19e4b489391cf);
+            
+        
+
+        marker_5d5762676acb88dfdeb02a28f5756513.bindPopup(popup_a73e177f553ec5b82ff0f3607418f994)
+        ;
+
+        
+    
+    
+                marker_5d5762676acb88dfdeb02a28f5756513.setIcon(icon_86a45951bda6c4b40da5079fba8a1697);
+            
+    
+            var marker_68c3a983c17d45f5ea7c3d28d4a10cd6 = L.marker(
+                [-23.614396, -46.775023],
+                {
+}
+            ).addTo(feature_group_d81219802e10e7f6813604d7e3bf202b);
+        
+    
+            var icon_4a0ac80d9dceb614d724b38f206132a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_402f687c6ccc311b76351f5ebce1bd39 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bd42d4420a1436952891119fe8917073 = $(`<div id="html_bd42d4420a1436952891119fe8917073" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-23.614396,-46.775023" target="_blank">Konioca Taboão da Serra</a></div>`)[0];
+                popup_402f687c6ccc311b76351f5ebce1bd39.setContent(html_bd42d4420a1436952891119fe8917073);
+            
+        
+
+        marker_68c3a983c17d45f5ea7c3d28d4a10cd6.bindPopup(popup_402f687c6ccc311b76351f5ebce1bd39)
+        ;
+
+        
+    
+    
+                marker_68c3a983c17d45f5ea7c3d28d4a10cd6.setIcon(icon_4a0ac80d9dceb614d724b38f206132a8);
+            
+    
+            var marker_70dbd5f7f090a1bc1f581314cd3e3445 = L.marker(
+                [-23.012294, -45.597106],
+                {
+}
+            ).addTo(feature_group_d81219802e10e7f6813604d7e3bf202b);
+        
+    
+            var icon_aa594d8995f6fdfb41dcf3b6fdc74c88 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aafa7eafb051d6faa5d0a3723b366b52 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bc9cd05d14e71f61c46f4fe49a5db236 = $(`<div id="html_bc9cd05d14e71f61c46f4fe49a5db236" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-23.012294,-45.597106" target="_blank">Konioca Taubaté</a></div>`)[0];
+                popup_aafa7eafb051d6faa5d0a3723b366b52.setContent(html_bc9cd05d14e71f61c46f4fe49a5db236);
+            
+        
+
+        marker_70dbd5f7f090a1bc1f581314cd3e3445.bindPopup(popup_aafa7eafb051d6faa5d0a3723b366b52)
+        ;
+
+        
+    
+    
+                marker_70dbd5f7f090a1bc1f581314cd3e3445.setIcon(icon_aa594d8995f6fdfb41dcf3b6fdc74c88);
+            
+    
+            var marker_7b9eb018cd80ea4c317a429e19a243fa = L.marker(
+                [-19.76363, -47.949949],
+                {
+}
+            ).addTo(feature_group_d81219802e10e7f6813604d7e3bf202b);
+        
+    
+            var icon_4eb4c3b3148185d363bb99215a84ef9e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b567948e82704713b303e843e3b26112 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_136ca7452ec35e2c5520fa7f02c41535 = $(`<div id="html_136ca7452ec35e2c5520fa7f02c41535" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-19.76363,-47.949949" target="_blank">Konioca Uberaba</a></div>`)[0];
+                popup_b567948e82704713b303e843e3b26112.setContent(html_136ca7452ec35e2c5520fa7f02c41535);
+            
+        
+
+        marker_7b9eb018cd80ea4c317a429e19a243fa.bindPopup(popup_b567948e82704713b303e843e3b26112)
+        ;
+
+        
+    
+    
+                marker_7b9eb018cd80ea4c317a429e19a243fa.setIcon(icon_4eb4c3b3148185d363bb99215a84ef9e);
+            
+    
+            var marker_e8f4ef2c1ef1184874bb56d444c3037e = L.marker(
+                [-22.517592, -44.107617],
+                {
+}
+            ).addTo(feature_group_d81219802e10e7f6813604d7e3bf202b);
+        
+    
+            var icon_4e2281753e5a2643d52e92355fc42539 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cb728783c008f1c488824978977377c6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_66958191dfa76cc00ae0b9cdb35229c1 = $(`<div id="html_66958191dfa76cc00ae0b9cdb35229c1" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-22.517592,-44.107617" target="_blank">Konioca Volta Redonda</a></div>`)[0];
+                popup_cb728783c008f1c488824978977377c6.setContent(html_66958191dfa76cc00ae0b9cdb35229c1);
+            
+        
+
+        marker_e8f4ef2c1ef1184874bb56d444c3037e.bindPopup(popup_cb728783c008f1c488824978977377c6)
+        ;
+
+        
+    
+    
+                marker_e8f4ef2c1ef1184874bb56d444c3037e.setIcon(icon_4e2281753e5a2643d52e92355fc42539);
+            
+    
+            var marker_e8b1b073765b187f23f40d7e418c354f = L.marker(
+                [-23.00128086668291, -43.364827005580544],
+                {
+}
+            ).addTo(feature_group_d81219802e10e7f6813604d7e3bf202b);
+        
+    
+            var icon_d4d9f6960a6627998d1a9825530cdda3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_864f40b84bcb8221ef2924eb4a17fa3d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bb689c1fc38aeaa79a7b3eea6957a880 = $(`<div id="html_bb689c1fc38aeaa79a7b3eea6957a880" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-23.00128086668291,-43.364827005580544" target="_blank">Konioca Barra da Tijuca</a></div>`)[0];
+                popup_864f40b84bcb8221ef2924eb4a17fa3d.setContent(html_bb689c1fc38aeaa79a7b3eea6957a880);
+            
+        
+
+        marker_e8b1b073765b187f23f40d7e418c354f.bindPopup(popup_864f40b84bcb8221ef2924eb4a17fa3d)
+        ;
+
+        
+    
+    
+                marker_e8b1b073765b187f23f40d7e418c354f.setIcon(icon_d4d9f6960a6627998d1a9825530cdda3);
+            
+    
+            feature_group_d81219802e10e7f6813604d7e3bf202b.addTo(map_1a569b58e7f577d2e55ad1e4993ef0a0);
+        
+    
+            var feature_group_7482db7d69c2bd890aa8ab154ffac070 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_4b55738b42c363b249abbf853d0aace1 = L.marker(
+                [-26.987675, -48.632762],
+                {
+}
+            ).addTo(feature_group_7482db7d69c2bd890aa8ab154ffac070);
+        
+    
+            var icon_8dd81800b9e7afccdb7259b25b66e7b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_677ba2ab7f63be0ab9caeb4bade99c8c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2ed3b0696e3f3584ae87eae0729504ec = $(`<div id="html_2ed3b0696e3f3584ae87eae0729504ec" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-26.987675,-48.632762" target="_blank">Konioca Blaneario Camboriú</a></div>`)[0];
+                popup_677ba2ab7f63be0ab9caeb4bade99c8c.setContent(html_2ed3b0696e3f3584ae87eae0729504ec);
+            
+        
+
+        marker_4b55738b42c363b249abbf853d0aace1.bindPopup(popup_677ba2ab7f63be0ab9caeb4bade99c8c)
+        ;
+
+        
+    
+    
+                marker_4b55738b42c363b249abbf853d0aace1.setIcon(icon_8dd81800b9e7afccdb7259b25b66e7b4);
+            
+    
+            var marker_c1529c43d076c037654f89ecfbe03c57 = L.marker(
+                [-30.024979, -51.161368],
+                {
+}
+            ).addTo(feature_group_7482db7d69c2bd890aa8ab154ffac070);
+        
+    
+            var icon_2cbeb9cf6c4540205316fbbf1e598557 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f2c4b655f7186be1719e46ed09f1da7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_483fb509f1d99867e1cc9a84279b9d66 = $(`<div id="html_483fb509f1d99867e1cc9a84279b9d66" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-30.024979,-51.161368" target="_blank">Konioca Porto Alegre</a></div>`)[0];
+                popup_8f2c4b655f7186be1719e46ed09f1da7.setContent(html_483fb509f1d99867e1cc9a84279b9d66);
+            
+        
+
+        marker_c1529c43d076c037654f89ecfbe03c57.bindPopup(popup_8f2c4b655f7186be1719e46ed09f1da7)
+        ;
+
+        
+    
+    
+                marker_c1529c43d076c037654f89ecfbe03c57.setIcon(icon_2cbeb9cf6c4540205316fbbf1e598557);
+            
+    
+            var marker_308e398972c96049348ede9328cff665 = L.marker(
+                [-29.689825, -53.793714],
+                {
+}
+            ).addTo(feature_group_7482db7d69c2bd890aa8ab154ffac070);
+        
+    
+            var icon_16f36ec1fd3b90ed0aea36c2e9ec998b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef8460152e015a99da5837634426502b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f5d775ba287a2104c700c431862c9d3e = $(`<div id="html_f5d775ba287a2104c700c431862c9d3e" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=-29.689825,-53.793714" target="_blank">Konioca Santa Maria</a></div>`)[0];
+                popup_ef8460152e015a99da5837634426502b.setContent(html_f5d775ba287a2104c700c431862c9d3e);
+            
+        
+
+        marker_308e398972c96049348ede9328cff665.bindPopup(popup_ef8460152e015a99da5837634426502b)
+        ;
+
+        
+    
+    
+                marker_308e398972c96049348ede9328cff665.setIcon(icon_16f36ec1fd3b90ed0aea36c2e9ec998b);
+            
+    
+            feature_group_7482db7d69c2bd890aa8ab154ffac070.addTo(map_1a569b58e7f577d2e55ad1e4993ef0a0);
+        
+    
+            var layer_control_48235cf7750ee46d83cf98c1f71d5ae2_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_dd07fa0584fe7f50fbcdaa91f761aa2c,
+                },
+                overlays :  {
+                    "Norte" : feature_group_3f72b36207f339d932e9e9b842978f27,
+                    "Nordeste" : feature_group_55d4b6723f2f8529fab8090bcd92bda9,
+                    "Centro-Oeste" : feature_group_d09e99174b68aedb8d3b691bb242523f,
+                    "Sudeste" : feature_group_d81219802e10e7f6813604d7e3bf202b,
+                    "Sul" : feature_group_7482db7d69c2bd890aa8ab154ffac070,
+                },
+            };
+            let layer_control_48235cf7750ee46d83cf98c1f71d5ae2 = L.control.layers(
+                layer_control_48235cf7750ee46d83cf98c1f71d5ae2_layers.base_layers,
+                layer_control_48235cf7750ee46d83cf98c1f71d5ae2_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_1a569b58e7f577d2e55ad1e4993ef0a0);
+
+        
+</script>
+</html>
