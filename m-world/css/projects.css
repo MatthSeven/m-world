@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@700&display=swap');
+
+:root {
+    --bg: #0e0a1a;
+    --text: #fff;
+    --accent: #a259f7;
+    --accent2: #9333ea;
+}
+
+body {
+    background: #0e0a1a url('https://www.transparenttextures.com/patterns/stardust.png');
+    color: var(--text);
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s, color 0.5s;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    text-shadow: 0 2px 18px #a259f755;
+    letter-spacing: 2.5px;
+    text-align: center;
+}
+
+h1 {
+    color: var(--accent);
+    margin-bottom: 0;
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: var(--text);
+    margin-top: 8px;
+    font-size: 1.6rem;
+}
+
+h3 {
+    color: var(--accent2);
+    margin-top: 0;
+}
+
+.container {
+    padding: 0 50px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+    margin: 0;
+    gap: 16px;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.4s, text-shadow 0.4s;
+}
+a:hover {
+    color: #fff;
+    text-shadow: 0 0 12px var(--accent);
+}
+
+img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 6px solid #a259f7;
+    object-fit: cover;
+    box-shadow: 0 2px 16px #a259f744;
+    transition: box-shadow 0.4s, border-color 0.4s;
+}
+img:hover {
+    box-shadow: 0 6px 32px #a259f7aa;
+    border-color: #9333ea;
+}
+
+.center {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 0;
+}
+footer img {
+    width: 44px;
+    height: 44px;
+    transition: transform 0.4s, filter 0.4s;
+}
+footer a {
+    margin: 20px;
+    text-align: center;
+    color: var(--text);
+}
+footer p {
+    margin-top: 2px;
+}
+footer a:hover img {
+    transform: scale(1.2) rotate(-6deg);
+    filter: brightness(1.3) drop-shadow(0 0 12px var(--accent));
+}
+
+.toggle-mode-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #0002;
+    font-size: 1.3rem;
+    transition: background 0.4s;
+}
+
+.btn-primario, .btn-segundario {
+    background: linear-gradient(90deg, #a259f7 60%, #9333ea 100%);
+    box-shadow: 0 2px 16px #a259f755;
+    border: none;
+    border-radius: 18px;
+    padding: 7px 16px;
+    margin: 0 6px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 0.98rem;
+    transition: background 0.4s, box-shadow 0.4s;
+}
+
+.btn-primario:hover, .btn-segundario:hover {
+    background: linear-gradient(90deg, #a259f7, #9333ea);
+    color: #fff;
+    box-shadow: 0 6px 28px #9333ea99;
+}
+
+a:focus, button:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+nav, .top-section, nav ul, nav li, nav a, .btn-primario, .btn-segundario, .projeto-card {
+    border-bottom: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.dark-mode {
+    --bg: #fff;
+    --text: #222;
+    --accent: #9333ea;
+    background: linear-gradient(45deg, #f3f3f3 25%, #e0e0e0 50%, #fff 75%);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards;
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+.fade-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s, transform 0.8s;
+}
+.fade-section.visible {
+    opacity: 1;
+    transform: none;
+}
+
+.projetos-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 48px 0;
+}
+
+.projeto-card {
+    background: linear-gradient(120deg, rgba(24,24,40,0.85) 60%, rgba(162,89,247,0.10) 100%);
+    backdrop-filter: blur(12px);
+    border: 1.5px solid rgba(162, 89, 247, 0.22);
+    border-radius: 20px;
+    box-shadow: 0 6px 32px var(--accent), 0 2px 12px #0003;
+    padding: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+    transition: transform 0.4s, box-shadow 0.4s, background 0.4s;
+}
+
+.projeto-card:hover {
+    transform: scale(1.04) translateY(-8px);
+    box-shadow: 0 16px 48px var(--accent), 0 6px 32px #0005;
+    border-color: var(--accent);
+    background: linear-gradient(120deg, rgba(24,24,40,0.92) 60%, rgba(162,89,247,0.18) 100%);
+}
+
+.projeto-info {
+    flex: 1 1 260px;
+}
+.projeto-info h3 {
+    margin-top: 0;
+    color: var(--accent);
+}
+
+.tecnologias {
+    display: flex;
+    gap: 14px;
+    margin-top: 14px;
+    padding: 0;
+    list-style: none;
+}
+.tecnologias img {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 0;
+}
+
+.projeto-mapa {
+    flex: 2 1 400px;
+    min-width: 300px;
+}
+
+.mapa-efeito {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px #a259f7aa;
+    transition: box-shadow 0.4s, transform 0.4s;
+    border: 1.5px solid rgba(162, 89, 247, 0.18);
+    background: rgba(24,24,40,0.7);
+    backdrop-filter: blur(8px);
+}
+.mapa-efeito:hover {
+    box-shadow: 0 10px 40px #a259f7;
+    transform: scale(1.025);
+    border-color: var(--accent);
+}
+.mapa-iframe {
+    width: 100%;
+    height: 320px;
+    border: none;
+    display: block;
+}
+
+.social-animate {
+    transform: scale(1.15) rotate(-8deg);
+    filter: drop-shadow(0 0 12px var(--accent));
+    transition: transform 0.4s, filter 0.4s;
+}
+.social-animate:hover {
+    transform: scale(1.25) rotate(-4deg);
+    filter: drop-shadow(0 0 20px #a259f7cc) brightness(1.2);
+}
+
+/* Responsividade aprimorada */
+@media (max-width: 900px) {
+    h1 { font-size: 1.6rem; }
+    h2 { font-size: 1.2rem; }
+    .container { padding: 0 5px; }
+    .projeto-card {
+        flex-direction: column;
+        gap: 18px;
+        padding: 12px;
+    }
+    .mapa-iframe {
+        height: 220px;
+    }
+    img {
+        width: 100px;
+        height: 100px;
+    }
+    ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

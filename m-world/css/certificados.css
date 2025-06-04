@@ -1,0 +1,415 @@
+/* Modernização e aprimoramento visual completo */
+
+:root {
+    --bg: #181828;
+    --text: #f8f8ff;
+    --accent: #a259f7;
+    --accent-2: #9333ea;
+    --shadow: 0 6px 32px 0 rgba(162,89,247,0.18), 0 2px 12px 0 rgba(0,0,0,0.10);
+    --font-title: 'Poppins', Arial, Helvetica, sans-serif;
+    --font-body: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #0b0b15 url('https://www.transparenttextures.com/patterns/stardust.png');
+    /* Fundo preto com textura de estrelas */
+    color: var(--text);
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s, color 0.5s;
+}
+
+.toggle-mode-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+    box-shadow: 0 6px 24px #a259f755;
+    font-size: 1.7rem;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toggle-mode-btn:hover {
+    background: var(--accent-2);
+    box-shadow: 0 12px 36px #a259f7aa;
+    transform: scale(1.12) rotate(-8deg);
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 24px;
+    margin: 0;
+    gap: 22px;
+}
+
+a {
+    color: var(--text);
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+a::after {
+    content: '';
+    display: none;
+    width: 0;
+    height: 2.5px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    transition: width 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    border-radius: 2px;
+}
+a:hover {
+    color: var(--accent-2);
+}
+a:hover::after {
+    width: 100%;
+}
+
+img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid var(--accent);
+    object-fit: cover;
+    box-shadow: 0 4px 18px #a259f733;
+    transition: box-shadow 0.3s, filter 0.3s, border-color 0.3s;
+}
+img:hover {
+    box-shadow: 0 8px 32px #a259f7cc;
+    filter: brightness(1.10);
+    border-color: var(--accent-2);
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    color: var(--accent);
+    text-align: center;
+    margin-bottom: 0;
+    font-family: var(--font-title);
+    letter-spacing: 1.5px;
+    font-size: 2.8rem;
+    text-shadow: 0 4px 16px #a259f733;
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--text);
+    text-align: center;
+    margin-top: 10px;
+    font-family: var(--font-title);
+    font-size: 1.7rem;
+    letter-spacing: 0.7px;
+    font-weight: 600;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 44px;
+    padding: 24px 0;
+    background: rgba(10,10,30,0.18);
+    border-top: 1.5px solid #a259f733;
+}
+
+footer img {
+    width: 44px;
+    height: 44px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+footer a {
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+footer p {
+    margin-top: 2px;
+}
+
+footer a:hover img {
+    transform: scale(1.22) rotate(-6deg);
+    filter: brightness(1.35);
+}
+
+.container {
+    padding: 0px 60px;
+}
+
+nav a:hover {
+    color: var(--accent-2);
+}
+
+button:focus, .download-cert-btn:focus, .carousel-btn:focus {
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.12rem;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+    padding: 14px 30px;
+    margin: 14px 0;
+    box-shadow: 0 6px 24px #a259f755;
+    font-family: var(--font-title);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+button:hover, .download-cert-btn:hover, .carousel-btn:hover {
+    background: linear-gradient(90deg, var(--accent-2), var(--accent));
+    box-shadow: 0 12px 36px #a259f7aa;
+    transform: translateY(-3px) scale(1.06);
+}
+
+.btn-primario, .btn-segundario {
+    background: linear-gradient(90deg, #3b2f7f, #a259f7);
+    border-radius: 20px;
+    padding: 10px 26px;
+    margin: 0 12px;
+    font-size: 1.12rem;
+}
+.btn-primario:hover, .btn-segundario:hover {
+    background: linear-gradient(90deg, #a259f7, #3b2f7f);
+    color: #fff;
+}
+
+/* Carrossel de certificados */
+.certificados-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 950px;
+    margin: 48px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    padding: 28px 0;
+    gap: 28px;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory; /* Firefox */
+}
+.carousel-track::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.cert-card {
+    min-width: 340px;
+    max-width: 340px;
+    margin: 0 22px;
+    background: #181828;
+    /* Fundo sólido escuro, sem gradiente neon */
+    border-radius: 18px;
+    box-shadow: 0 2px 12px #000a, 0 1px 4px #a259f722;
+    /* Sombra mais discreta */
+    padding: 28px 22px 18px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    color: var(--text);
+    border: 1.5px solid #23234a;
+    scroll-snap-align: center; /* Alinhamento suave no carrossel */
+}
+.cert-card:hover {
+    transform: scale(1.03) translateY(-4px);
+    box-shadow: 0 6px 24px #a259f744;
+    border-color: var(--accent-2);
+}
+
+.certificado {
+    width: 100%;
+    max-width: 270px;
+    border-radius: 14px;
+    cursor: pointer;
+    box-shadow: 0 6px 24px #a259f733;
+    transition: box-shadow 0.3s, filter 0.3s;
+    border: none;
+    margin-bottom: 18px;
+    margin-left: 0;
+    height: auto;
+    object-fit: contain;
+    background: #fff;
+}
+.certificado:hover {
+    box-shadow: 0 12px 40px #a259f7cc;
+    filter: brightness(1.12);
+}
+
+.cert-info {
+    margin-top: 22px;
+    text-align: center;
+    font-size: 1.13rem;
+    font-family: var(--font-body);
+    color: #f0eaff;
+}
+
+.download-cert-btn {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 11px 26px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.12rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 6px 24px #a259f755;
+    font-family: var(--font-title);
+    font-weight: 600;
+}
+.download-cert-btn:hover {
+    background: linear-gradient(90deg, var(--accent-2), var(--accent));
+    box-shadow: 0 12px 36px #a259f7aa;
+    transform: translateY(-3px) scale(1.06);
+}
+
+.carousel-btn {
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    font-size: 2.2rem;
+    margin: 0 16px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 24px #a259f755;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    color: #fff;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+.carousel-btn.left {
+    margin-right: 16px;
+}
+.carousel-btn.right {
+    margin-left: 16px;
+}
+
+/* Lightbox para zoom */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0; top: 0; width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.88);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+    width: auto;
+}
+.lightbox-content {
+    max-width: 92vw;
+    max-height: 82vh;
+    border-radius: 18px;
+    box-shadow: 0 12px 48px #a259f7cc;
+}
+.lightbox .close {
+    position: absolute;
+    top: 32px;
+    right: 56px;
+    color: #fff;
+    font-size: 2.7rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10001;
+    transition: color 0.2s, transform 0.2s;
+}
+.lightbox .close:hover {
+    color: var(--accent);
+    transform: scale(1.18) rotate(8deg);
+}
+#lightbox-caption {
+    color: #fff;
+    margin-top: 22px;
+    font-size: 1.18rem;
+    text-align: center;
+    max-width: 92vw;
+    text-shadow: 0 2px 8px #181828cc;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .container {
+        padding: 0 10px;
+    }
+    .certificados-carousel {
+        max-width: 99vw;
+    }
+    .cert-card {
+        min-width: 94vw;
+        max-width: 94vw;
+        margin: 0 4px;
+        padding: 16px;
+    }
+    .certificado {
+        width: 100%;
+    }
+    img {
+        width: 110px;
+        height: 110px;
+    }
+    ul {
+        flex-direction: column;
+        gap: 14px;
+        padding: 14px;
+    }
+    footer {
+        flex-direction: column;
+        gap: 14px;
+    }
+    h1 {
+        font-size: 2.1rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Animação de fade-in para títulos e textos */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
